@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remove specific Button</title>
+</head>
+<body>
+        <!-- gvaqvs 2 div elementi,tavisi unikaluri ID-it -->
+        <div id="div-01">Here is div-01</div>
+        <div id="div-02">Here is div-02</div>
+         <!--ghilaki konkretuli divis amosaghebad -->
+    <!--rodesac davachert ghilaks, is gamoidzakhebs removeDiv02() punqcias-->
+    <button onclick="removeDiv02()">Remove div-02</button>
+    <!-- JavaScript kodi mititebuli div elementis mosashoreblad -->
+    <script>
+         // Funqcia romlis sashualebit amovigebt 'div-02' ghilaks
+         function removeDiv02() {
+            // movnishnavt div elements tavisi ID-it
+            const element = document.getElementById("div-02");
+            // es brdzaneba washlis monishnul elements
+            element.remove();
+        }
+    </script>
+</body>
+</html>
