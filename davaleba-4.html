@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum of Costs</title>
+</head>
+<body>
+    <!-- Paragraphi romelic gvichvenebs jams -->
+    <p class="result"></p>
+
+    <script>
+        // produktis monatsemebis masivi
+        const productData = [
+            { product_id: 1, amount: 200 },
+            { product_id: 2, amount: 300 },
+            { product_id: 3, amount: 500 }
+        ];
+
+       // punktsia tankhebis jamis gamosatvlelad
+        function calculateSum(data) {
+            return data.reduce((sum, product) => sum + product.amount, 0);
+        }
+
+        // funqciis gamokenebit jamis gamotvla
+        const totalAmount = calculateSum(productData);
+
+        // paragraph elementis archeva shedegis sanakhavad
+        const resultElement = document.querySelector(".result");
+
+       // abzatsis elementshi jamis chveneba
+        resultElement.textContent = `Total amount: ${totalAmount}`;
+    </script>
+</body>
+</html>
