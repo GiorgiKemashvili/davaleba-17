@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input to Paragraph</title>
+</head>
+<body>
+    <!-- shekvanis veli da ghilaki -->
+    <label>
+        Enter some text:
+        <input type="text" id="userInput" name="userInput">
+    </label>
+    <button id="submitButton">Submit</button>
+       <!-- Paragraphi mnishvnelobis sachveneblad -->
+       <p class="result"></p>
+       <script>
+        // avirchiot input field, button, da result paragraph
+        const inputElement = document.querySelector("#userInput");
+        const buttonElement = document.querySelector("#submitButton");
+        const resultElement = document.querySelector(".result");
+           // event listener-is ghilakistvis damateba
+           buttonElement.addEventListener("click", () => {
+            // shekvanis velshi mighebuli mnishvnelobis migheba
+            const inputValue = inputElement.value;
+
+            // shedegis abzatsis teksturi shinaarsis dakeneba shekvanis mnishvnelobaze
+            resultElement.textContent = `You entered: ${inputValue}`;
+        });
+    </script>
+</body>
+</html>
