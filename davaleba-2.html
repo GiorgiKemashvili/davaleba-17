@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insert Image with JavaScript</title>
+</head>
+<body>
+    <script>
+        //shevqmnat axali img elementi Javascript-shi
+        const img = document.createElement('img');
+         // mivaniwot src attributi img elements
+         img.setAttribute('src', 'https://www.simplilearn.com/ice9/free_resources_article_thumb/Become_a_Front_End_Developer.jpg');
+           // davamatot alt, width, height
+        img.setAttribute('alt', 'Front End Developer');
+        img.setAttribute('width', '500'); 
+        img.setAttribute('height', '300'); 
+          // shevitanot sheqmnili img elementi body-shi
+        document.body.appendChild(img);
+    </script>
+</body>
+</html>
